@@ -19,7 +19,7 @@ class Testcase101:
         action.move_to_element(tickets).perform()
         statuses = driver.find_element(By.LINK_TEXT, "Statuses")
         statuses.click()
-        driver.find_element(By.XPATH, "/html/body/div[3]/div/section/section/div/header/button[H1]").click()
+        driver.find_element(By.XPATH, "/html/body/div[3]/div/section/section/div/header/button[H1]").click()     
         driver.find_element(By.TAG_NAME, "input").send_keys("Issue Created")
         statusColourSelect = driver.find_element(By.XPATH, "//div[@class='sp-replacer sp-light']")
         statusColourSelect.click()
@@ -116,11 +116,7 @@ class TablePage(BasePage):
             rowText = row.text
             print("Row " + str(i) + " Text: " + rowText)
 
-[H1]Always prefer relative XPath over absolute XPath because if a new feature is implemented or there is a change in alignment, the script will break.
-[H2]Should not use sleep in script. And already implicit wait is used in the beginning, so no need to use sleep.
-[H3]Should not use sleep in script. And already implicit wait is used in the beginning, so no need to use sleep.
-[H4]Should not use sleep in script. And already implicit wait is used in the beginning, so no need to use sleep.
-[H5]In the beginning already used implicit wait 
-[H6]Use Relative Xpath
-[H7]Should not use sleep in script. And already implicit wait is used in the beginning, so no need to use sleep.
-[H8]Prefer Relative Xpath
+
+Comments
+1.Always prefer relative XPath over absolute XPath because if a new feature is implemented or there is a change in alignment, the script will break.
+2.Should not use sleep in script. And already implicit wait is used in the beginning, so no need to use sleep.
